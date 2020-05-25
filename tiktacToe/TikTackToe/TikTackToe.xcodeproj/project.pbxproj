@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4212FD4C344FC7BCC6201259 /* Pods_TikTackToe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF61C6574F3126EA4A1730B2 /* Pods_TikTackToe.framework */; };
+		52EED3CB225E3F920013A3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EED3CA225E3F920013A3DF /* AppDelegate.swift */; };
+		52EED3CD225E3F920013A3DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EED3CC225E3F920013A3DF /* ViewController.swift */; };
+		52EED3D0225E3F920013A3DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EED3CE225E3F920013A3DF /* Main.storyboard */; };
+		52EED3D2225E3F980013A3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EED3D1225E3F980013A3DF /* Assets.xcassets */; };
+		52EED3D5225E3F980013A3DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EED3D3225E3F980013A3DF /* LaunchScreen.storyboard */; };
+		52EED3E0225E3F980013A3DF /* TikTackToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EED3DF225E3F980013A3DF /* TikTackToeTests.swift */; };
+		52EED3EB225E3F980013A3DF /* TikTackToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EED3EA225E3F980013A3DF /* TikTackToeUITests.swift */; };
+		52EED4C42260F3E10013A3DF /* ComputeWin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EED4C32260F3E10013A3DF /* ComputeWin.framework */; };
+		52EED4C52260F40A0013A3DF /* ComputeWin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EED4C32260F3E10013A3DF /* ComputeWin.framework */; };
+		52EED4C62260F40A0013A3DF /* ComputeWin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52EED4C32260F3E10013A3DF /* ComputeWin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52EED505226101760013A3DF /* win.json in Resources */ = {isa = PBXBuildFile; fileRef = 52EED504226101750013A3DF /* win.json */; };
+		B8AE7D40E8F9C9017B6B934E /* Pods_TikTackToeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5749FA4D88B7D94D11F592 /* Pods_TikTackToeTests.framework */; };
+		EE69A0194BB36CA755072C8C /* Pods_TikTackToeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C323AF7EE7A56BBD9A00A9D /* Pods_TikTackToeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52EED3DC225E3F980013A3DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EED3BF225E3F920013A3DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52EED3C6225E3F920013A3DF;
+			remoteInfo = TikTackToe;
+		};
+		52EED3E7225E3F980013A3DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52EED3BF225E3F920013A3DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52EED3C6225E3F920013A3DF;
+			remoteInfo = TikTackToe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52EED4C72260F40B0013A3DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				52EED4C62260F40A0013A3DF /* ComputeWin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		019D3C3C1A6AEB4F93757408 /* Pods-TikTackToeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTackToeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikTackToeUITests/Pods-TikTackToeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1C323AF7EE7A56BBD9A00A9D /* Pods_TikTackToeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTackToeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BA3505580E58F761F4ACDE /* Pods-TikTackToeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTackToeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikTackToeTests/Pods-TikTackToeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B5749FA4D88B7D94D11F592 /* Pods_TikTackToeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTackToeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F73D5CF90CCF177F2DDCF99 /* Pods-TikTackToe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTackToe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikTackToe/Pods-TikTackToe.debug.xcconfig"; sourceTree = "<group>"; };
+		474D04750C7E50B9318B316C /* Pods-TikTackToe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTackToe.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikTackToe/Pods-TikTackToe.release.xcconfig"; sourceTree = "<group>"; };
+		52EED3C7225E3F920013A3DF /* TikTackToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTackToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52EED3CA225E3F920013A3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52EED3CC225E3F920013A3DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52EED3CF225E3F920013A3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52EED3D1225E3F980013A3DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52EED3D4225E3F980013A3DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52EED3D6225E3F980013A3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EED3DB225E3F980013A3DF /* TikTackToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikTackToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52EED3DF225E3F980013A3DF /* TikTackToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTackToeTests.swift; sourceTree = "<group>"; };
+		52EED3E1225E3F980013A3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EED3E6225E3F980013A3DF /* TikTackToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikTackToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52EED3EA225E3F980013A3DF /* TikTackToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTackToeUITests.swift; sourceTree = "<group>"; };
+		52EED3EC225E3F980013A3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EED4C32260F3E10013A3DF /* ComputeWin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ComputeWin.framework; sourceTree = "<group>"; };
+		52EED504226101750013A3DF /* win.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = win.json; sourceTree = "<group>"; };
+		9C0FB2BA3937BCB93C5EA3ED /* Pods-TikTackToeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTackToeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TikTackToeUITests/Pods-TikTackToeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3ED3E4C6ED5D2081A6E9C3 /* Pods-TikTackToeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTackToeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TikTackToeTests/Pods-TikTackToeTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF61C6574F3126EA4A1730B2 /* Pods_TikTackToe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTackToe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52EED3C4225E3F920013A3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EED4C42260F3E10013A3DF /* ComputeWin.framework in Frameworks */,
+				52EED4C52260F40A0013A3DF /* ComputeWin.framework in Frameworks */,
+				4212FD4C344FC7BCC6201259 /* Pods_TikTackToe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52EED3D8225E3F980013A3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AE7D40E8F9C9017B6B934E /* Pods_TikTackToeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52EED3E3225E3F980013A3DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE69A0194BB36CA755072C8C /* Pods_TikTackToeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52EED3BE225E3F920013A3DF = {
+			isa = PBXGroup;
+			children = (
+				52EED3C9225E3F920013A3DF /* TikTackToe */,
+				52EED3DE225E3F980013A3DF /* TikTackToeTests */,
+				52EED3E9225E3F980013A3DF /* TikTackToeUITests */,
+				52EED3C8225E3F920013A3DF /* Products */,
+				A15292560BEC783749A37D6E /* Pods */,
+				9888D2712A329F9728020994 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52EED3C8225E3F920013A3DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52EED3C7225E3F920013A3DF /* TikTackToe.app */,
+				52EED3DB225E3F980013A3DF /* TikTackToeTests.xctest */,
+				52EED3E6225E3F980013A3DF /* TikTackToeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52EED3C9225E3F920013A3DF /* TikTackToe */ = {
+			isa = PBXGroup;
+			children = (
+				52EED4C32260F3E10013A3DF /* ComputeWin.framework */,
+				52EED3CA225E3F920013A3DF /* AppDelegate.swift */,
+				52EED3CC225E3F920013A3DF /* ViewController.swift */,
+				52EED3CE225E3F920013A3DF /* Main.storyboard */,
+				52EED3D1225E3F980013A3DF /* Assets.xcassets */,
+				52EED504226101750013A3DF /* win.json */,
+				52EED3D3225E3F980013A3DF /* LaunchScreen.storyboard */,
+				52EED3D6225E3F980013A3DF /* Info.plist */,
+			);
+			path = TikTackToe;
+			sourceTree = "<group>";
+		};
+		52EED3DE225E3F980013A3DF /* TikTackToeTests */ = {
+			isa = PBXGroup;
+			children = (
+				52EED3DF225E3F980013A3DF /* TikTackToeTests.swift */,
+				52EED3E1225E3F980013A3DF /* Info.plist */,
+			);
+			path = TikTackToeTests;
+			sourceTree = "<group>";
+		};
+		52EED3E9225E3F980013A3DF /* TikTackToeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52EED3EA225E3F980013A3DF /* TikTackToeUITests.swift */,
+				52EED3EC225E3F980013A3DF /* Info.plist */,
+			);
+			path = TikTackToeUITests;
+			sourceTree = "<group>";
+		};
+		9888D2712A329F9728020994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF61C6574F3126EA4A1730B2 /* Pods_TikTackToe.framework */,
+				2B5749FA4D88B7D94D11F592 /* Pods_TikTackToeTests.framework */,
+				1C323AF7EE7A56BBD9A00A9D /* Pods_TikTackToeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A15292560BEC783749A37D6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F73D5CF90CCF177F2DDCF99 /* Pods-TikTackToe.debug.xcconfig */,
+				474D04750C7E50B9318B316C /* Pods-TikTackToe.release.xcconfig */,
+				24BA3505580E58F761F4ACDE /* Pods-TikTackToeTests.debug.xcconfig */,
+				CC3ED3E4C6ED5D2081A6E9C3 /* Pods-TikTackToeTests.release.xcconfig */,
+				9C0FB2BA3937BCB93C5EA3ED /* Pods-TikTackToeUITests.debug.xcconfig */,
+				019D3C3C1A6AEB4F93757408 /* Pods-TikTackToeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52EED3C6225E3F920013A3DF /* TikTackToe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52EED3EF225E3F980013A3DF /* Build configuration list for PBXNativeTarget "TikTackToe" */;
+			buildPhases = (
+				02FDEB4D8903E59C5C0CF432 /* [CP] Check Pods Manifest.lock */,
+				52EED3C3225E3F920013A3DF /* Sources */,
+				52EED3C4225E3F920013A3DF /* Frameworks */,
+				52EED3C5225E3F920013A3DF /* Resources */,
+				52EED4C72260F40B0013A3DF /* Embed Frameworks */,
+				474C28AEB75FB903D23530D0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikTackToe;
+			productName = TikTackToe;
+			productReference = 52EED3C7225E3F920013A3DF /* TikTackToe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52EED3DA225E3F980013A3DF /* TikTackToeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52EED3F2225E3F980013A3DF /* Build configuration list for PBXNativeTarget "TikTackToeTests" */;
+			buildPhases = (
+				2E2D714604C6B2DB4FFD6528 /* [CP] Check Pods Manifest.lock */,
+				52EED3D7225E3F980013A3DF /* Sources */,
+				52EED3D8225E3F980013A3DF /* Frameworks */,
+				52EED3D9225E3F980013A3DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52EED3DD225E3F980013A3DF /* PBXTargetDependency */,
+			);
+			name = TikTackToeTests;
+			productName = TikTackToeTests;
+			productReference = 52EED3DB225E3F980013A3DF /* TikTackToeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52EED3E5225E3F980013A3DF /* TikTackToeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52EED3F5225E3F980013A3DF /* Build configuration list for PBXNativeTarget "TikTackToeUITests" */;
+			buildPhases = (
+				3CC4397DCCCA3FC9712A421E /* [CP] Check Pods Manifest.lock */,
+				52EED3E2225E3F980013A3DF /* Sources */,
+				52EED3E3225E3F980013A3DF /* Frameworks */,
+				52EED3E4225E3F980013A3DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52EED3E8225E3F980013A3DF /* PBXTargetDependency */,
+			);
+			name = TikTackToeUITests;
+			productName = TikTackToeUITests;
+			productReference = 52EED3E6225E3F980013A3DF /* TikTackToeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52EED3BF225E3F920013A3DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = example;
+				TargetAttributes = {
+					52EED3C6225E3F920013A3DF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					52EED3DA225E3F980013A3DF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 52EED3C6225E3F920013A3DF;
+					};
+					52EED3E5225E3F980013A3DF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 52EED3C6225E3F920013A3DF;
+					};
+				};
+			};
+			buildConfigurationList = 52EED3C2225E3F920013A3DF /* Build configuration list for PBXProject "TikTackToe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52EED3BE225E3F920013A3DF;
+			productRefGroup = 52EED3C8225E3F920013A3DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52EED3C6225E3F920013A3DF /* TikTackToe */,
+				52EED3DA225E3F980013A3DF /* TikTackToeTests */,
+				52EED3E5225E3F980013A3DF /* TikTackToeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52EED3C5225E3F920013A3DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EED3D5225E3F980013A3DF /* LaunchScreen.storyboard in Resources */,
+				52EED3D2225E3F980013A3DF /* Assets.xcassets in Resources */,
+				52EED505226101760013A3DF /* win.json in Resources */,
+				52EED3D0225E3F920013A3DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52EED3D9225E3F980013A3DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52EED3E4225E3F980013A3DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02FDEB4D8903E59C5C0CF432 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikTackToe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E2D714604C6B2DB4FFD6528 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikTackToeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CC4397DCCCA3FC9712A421E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikTackToeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		474C28AEB75FB903D23530D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TikTackToe/Pods-TikTackToe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TikTackToe/Pods-TikTackToe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52EED3C3225E3F920013A3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EED3CD225E3F920013A3DF /* ViewController.swift in Sources */,
+				52EED3CB225E3F920013A3DF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52EED3D7225E3F980013A3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EED3E0225E3F980013A3DF /* TikTackToeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52EED3E2225E3F980013A3DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EED3EB225E3F980013A3DF /* TikTackToeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52EED3DD225E3F980013A3DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52EED3C6225E3F920013A3DF /* TikTackToe */;
+			targetProxy = 52EED3DC225E3F980013A3DF /* PBXContainerItemProxy */;
+		};
+		52EED3E8225E3F980013A3DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52EED3C6225E3F920013A3DF /* TikTackToe */;
+			targetProxy = 52EED3E7225E3F980013A3DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52EED3CE225E3F920013A3DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52EED3CF225E3F920013A3DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52EED3D3225E3F980013A3DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52EED3D4225E3F980013A3DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52EED3ED225E3F980013A3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52EED3EE225E3F980013A3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52EED3F0225E3F980013A3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F73D5CF90CCF177F2DDCF99 /* Pods-TikTackToe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRHP26VDZY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TikTackToe",
+				);
+				INFOPLIST_FILE = TikTackToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TikTackToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52EED3F1225E3F980013A3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474D04750C7E50B9318B316C /* Pods-TikTackToe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MRHP26VDZY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TikTackToe",
+				);
+				INFOPLIST_FILE = TikTackToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TikTackToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52EED3F3225E3F980013A3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24BA3505580E58F761F4ACDE /* Pods-TikTackToeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TikTackToeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TikTackToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikTackToe.app/TikTackToe";
+			};
+			name = Debug;
+		};
+		52EED3F4225E3F980013A3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC3ED3E4C6ED5D2081A6E9C3 /* Pods-TikTackToeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TikTackToeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TikTackToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TikTackToe.app/TikTackToe";
+			};
+			name = Release;
+		};
+		52EED3F6225E3F980013A3DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0FB2BA3937BCB93C5EA3ED /* Pods-TikTackToeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TikTackToeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TikTackToeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TikTackToe;
+			};
+			name = Debug;
+		};
+		52EED3F7225E3F980013A3DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019D3C3C1A6AEB4F93757408 /* Pods-TikTackToeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TikTackToeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TikTackToeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TikTackToe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52EED3C2225E3F920013A3DF /* Build configuration list for PBXProject "TikTackToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52EED3ED225E3F980013A3DF /* Debug */,
+				52EED3EE225E3F980013A3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52EED3EF225E3F980013A3DF /* Build configuration list for PBXNativeTarget "TikTackToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52EED3F0225E3F980013A3DF /* Debug */,
+				52EED3F1225E3F980013A3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52EED3F2225E3F980013A3DF /* Build configuration list for PBXNativeTarget "TikTackToeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52EED3F3225E3F980013A3DF /* Debug */,
+				52EED3F4225E3F980013A3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52EED3F5225E3F980013A3DF /* Build configuration list for PBXNativeTarget "TikTackToeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52EED3F6225E3F980013A3DF /* Debug */,
+				52EED3F7225E3F980013A3DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52EED3BF225E3F920013A3DF /* Project object */;
+}

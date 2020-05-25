@@ -1,0 +1,11 @@
+framework module ComputeWin {
+  umbrella header "ComputeWin.h"
+
+  export *
+  module * { export * }
+}
+
+module ComputeWin.Swift {
+    header "ComputeWin-Swift.h"
+    requires objc
+}
